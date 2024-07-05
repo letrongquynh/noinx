@@ -7,6 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
     <!-- font awesome-->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/material-icons.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/revolution-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -36,41 +42,39 @@
                 <i class="fa-brands fa-instagram"></i>
             </div>
         </div>
-        <div class="container--fliud">
-
-            <div class="header-inner">
-                <div class="logo">
-                    <a href="blog.html"><img src="/img/logo.jpg" alt="logo"></a>
+        <div class="header-inner">
+            <div class="logo">
+                <a href="blog.html"><img src="/img/logo.jpg" alt="logo"></a>
+            </div>
+            <div class="nav-wrap">
+                <nav class="mainnav" id="mainnav">
+                    <ul class="menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#pages">Pages </a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-header_right">
+                <div class="btn-contactUs">
+                    <a href="" id="contactUS">Contact Us</a>
                 </div>
-                <div class="nav-wrap">
-                    <nav class="mainnav" id="mainnav">
-                        <ul class="menu">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#service">Service</a></li>
-                            <li><a href="#pages">Pages </a></li>
-                            <li><a href="#shop">Shop</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="main--header__right">
-                    <div class="btn-contactUs">
-                        <a href="" id="contactUS">Contact Us</a>
+                <div class="call-anytime">
+                    <img src="/img/icon/calljpg.jpg" alt="call">
+                    <div class="text">
+                        <span>Call Anytime</span>
+                        <span class="number-phone">(303) 555-0105</span>
                     </div>
-                    <div class="call-anytime">
-                        <img src="/img/icon/calljpg.jpg" alt="call">
-                        <div class="text">
-                            <span>Call Anytime</span>
-                            <span class="number-phone">(303) 555-0105</span>
-                        </div>
-                        <span class="jamp"></span>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-regular fa-circle-user"></i>
-                    </div>
+                    <span class="jamp"></span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-regular fa-circle-user"></i>
                 </div>
             </div>
+        </div>
         </div>
     </header>
     <section class="banner">
@@ -86,131 +90,335 @@
             </div>
         </div>
     </section>
-    <section class="blog--one">
+    <section class="main-content blog-post">
         <div class="container">
-            <div class="row gutter-y-30">
-                <div class="blog--card">
-                    <div class="col-md-6 col lg-4">
-                        <div class="blog--card__img">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="post-wrap">
+
+                        <div class="post-wrap_image">
                             <img src="/img/item1.jpg" alt="img1">
+                            <img src="/img/item1.jpg" alt="img1">
+                            <a href="" class="post-wrap_image_link">
+                                <span class="post-wrap_or_only">
+                                    10 Simple Practices that Will Help You Get 1% Better Every Day
+                                </span>
+                            </a>
                         </div>
-                        <div class="blog--card__content">
-                            <div class="blog--card__meta">
-                                <div class="blog--card__date"><span class="blog--card__date__day">30</span>
+                        <div class="post-wrap_content">
+                            <div class="post-wrap_meta">
+                                <div class="post-wrap_date"><span class="post-wrap_date__day">30</span>
                                     AUG</div>
-                                <a href="" class="blog--card__meta__comment">
+                                <a href="" class="post-wrap_meta__comment">
                                     <i class="fa-solid fa-comments"></i>
                                     2 comments
                                 </a>
-                                <h3 class="blog--card__title"><a href="">
-                                        10 Simple Practices that Will Help You Get 1% Better Every Day
-                                    </a></h3>
                             </div>
-                            <div class="blog--card__content__btn">
-                                <a href="" class="blog--card__content__btn__link">
-                                    Read More
+                            <h3 class="post-widget_title"><a href="">
+                                    10 Simple Practices that Will Help You Get 1% Better Every Day
                                 </a>
-                                <i class="fa-solid fa-arrow-right"></i>
+                            </h3>
+                            <div class="post-wrap_content__btn">
+                                <a href="" class="post-wrap_content__btn__link">
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="post-wrap">
+
+                        <div class="post-wrap_image">
+                            <img src="/img/item2.jpg" alt="img1">
+                            <img src="/img/item2.jpg" alt="img1">
+                            <a href="" class="post-wrap_image_link">
+                                <span class="post-wrap_or_only">
+                                    10 Simple Practices that Will Help You Get 1% Better Every Day
+                                </span>
+                            </a>
+                        </div>
+                        <div class="post-wrap_content">
+                            <div class="post-wrap_meta">
+                                <div class="post-wrap_date"><span class="post-wrap_date__day">30</span>
+                                    AUG</div>
+                                <a href="" class="post-wrap_meta__comment">
+                                    <i class="fa-solid fa-comments"></i>
+                                    2 comments
+                                </a>
+                            </div>
+                            <h3 class="post-widget_title"><a href="">
+                                    10 Simple Practices that Will Help You Get 1% Better Every Day
+                                </a>
+                            </h3>
+                            <div class="post-wrap_content__btn">
+                                <a href="" class="post-wrap_content__btn__link">
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="post-wrap">
+
+                        <div class="post-wrap_image">
+                            <img src="/img/item3.jpg" alt="img1">
+                            <img src="/img/item3.jpg" alt="img1">
+                            <a href="" class="post-wrap_image_link">
+                                <span class="post-wrap_or_only">
+                                    10 Simple Practices that Will Help You Get 1% Better Every Day
+                                </span>
+                            </a>
+                        </div>
+                        <div class="post-wrap_content">
+                            <div class="post-wrap_meta">
+                                <div class="post-wrap_date"><span class="post-wrap_date__day">30</span>
+                                    AUG</div>
+                                <a href="" class="post-wrap_meta__comment">
+                                    <i class="fa-solid fa-comments"></i>
+                                    2 comments
+                                </a>
+                            </div>
+                            <h3 class="post-widget_title"><a href="">
+                                    10 Simple Practices that Will Help You Get 1% Better Every Day
+                                </a>
+                            </h3>
+                            <div class="post-wrap_content__btn">
+                                <a href="" class="post-wrap_content__btn__link">
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="post-wrap">
+
+                        <div class="post-wrap_image">
+                            <img src="/img/item4.jpg" alt="img1">
+                            <img src="/img/item4.jpg" alt="img1">
+                            <a href="" class="post-wrap_image_link">
+                                <span class="post-wrap_or_only">
+                                    10 Simple Practices that Will Help You Get 1% Better Every Day
+                                </span>
+                            </a>
+                        </div>
+                        <div class="post-wrap_content">
+                            <div class="post-wrap_meta">
+                                <div class="post-wrap_date"><span class="post-wrap_date__day">30</span>
+                                    AUG</div>
+                                <a href="" class="post-wrap_meta__comment">
+                                    <i class="fa-solid fa-comments"></i>
+                                    2 comments
+                                </a>
+                            </div>
+                            <h3 class="post-widget_title"><a href="">
+                                    10 Simple Practices that Will Help You Get 1% Better Every Day
+                                </a>
+                            </h3>
+                            <div class="post-wrap_content__btn">
+                                <a href="" class="post-wrap_content__btn__link">
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="post-wrap">
+
+                        <div class="post-wrap_image">
+                            <img src="/img/item5.jpg" alt="img1">
+                            <img src="/img/item5.jpg" alt="img1">
+                            <a href="" class="post-wrap_image_link">
+                                <span class="post-wrap_or_only">
+                                    10 Simple Practices that Will Help You Get 1% Better Every Day
+                                </span>
+                            </a>
+                        </div>
+                        <div class="post-wrap_content">
+                            <div class="post-wrap_meta">
+                                <div class="post-wrap_date"><span class="post-wrap_date__day">30</span>
+                                    AUG</div>
+                                <a href="" class="post-wrap_meta__comment">
+                                    <i class="fa-solid fa-comments"></i>
+                                    2 comments
+                                </a>
+                            </div>
+                            <h3 class="post-widget_title"><a href="">
+                                    10 Simple Practices that Will Help You Get 1% Better Every Day
+                                </a>
+                            </h3>
+                            <div class="post-wrap_content__btn">
+                                <a href="" class="post-wrap_content__btn__link">
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="post-wrap">
+
+                        <div class="post-wrap_image">
+                            <img src="/img/item6.jpg" alt="img1">
+                            <img src="/img/item6.jpg" alt="img1">
+                            <a href="" class="post-wrap_image_link">
+                                <span class="post-wrap_or_only">
+                                    10 Simple Practices that Will Help You Get 1% Better Every Day
+                                </span>
+                            </a>
+                        </div>
+                        <div class="post-wrap_content">
+                            <div class="post-wrap_meta">
+                                <div class="post-wrap_date"><span class="post-wrap_date__day">30</span>
+                                    AUG</div>
+                                <a href="" class="post-wrap_meta__comment">
+                                    <i class="fa-solid fa-comments"></i>
+                                    2 comments
+                                </a>
+                            </div>
+                            <h3 class="post-widget_title"><a href="">
+                                    10 Simple Practices that Will Help You Get 1% Better Every Day
+                                </a>
+                            </h3>
+                            <div class="post-wrap_content__btn">
+                                <a href="" class="post-wrap_content__btn__link">
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
         </div>
     </section>
 
-    <!-- <footer class="main-footer">
-                <div class="main-footer_top">
-                    <div class="container">
-                        <div class="main-footer_inner">
-                    <div class="main-footer_logo">
-                        <a href="" class="main-footer_inner_logo"><img src="/img/Logo.png" alt=""></a>
-                    </div>
-                    <div class="main-footer_inner-social">
-                        <a href="#fb">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#linkedin">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="#tx">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="#yt">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-footer_middle">
+    <footer class="footer">
+        <div class="footer-widgets">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-xl-4">
-                        <div class="footer-widget">
-                            <div class="footer-widget-link">
-                                <h4 class="footer-widget_title">
-                                    Company
-                                </h4>
-                                <ul class="list-unstyled footer-widget_link ">
-                                    <li class="footer-widget_link_item"><a href="">About Us</a></li>
-                                    <li class="footer-widget_link_item"><a href="">Blog</a></li>
-                                    <li class="footer-widget_link_item"><a href="">Meet the Team</a></li>
-                                    <li class="footer-widget_link_item"><a href="">Contact Now</a></li>
-                                </ul>
+                    <div class="footer-widget-top">
+                        <div class="widget-logo">
+                            <a href="">
+                                <img src="/img/Logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="widget-social">
+                            <a href="https://facebook.com">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.linkedin.com">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="https://youtube.com">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="footer-widget_midlle">
+                        <div class="col-md-6 col-xl-2">
+                            <div class="widget-link">
+                                <div class="widget-company">
+                                    <h4 class="widget-title">
+                                        Company
+                                    </h4>
+                                    <ul class="widget-list">
+                                        <li class="widget-item"><a href="">About Us</a></li>
+                                        <li class="widget-item"><a href="">Blog</a></li>
+                                        <li class="widget-item"><a href="">Meet the Team</a></li>
+                                        <li class="widget-item"><a href="">Contact Now</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-2">
+                            <div class="widget-link">
+                                <div class="widget-links">
+                                    <h4 class="widget-title">
+                                        Links
+                                    </h4>
+                                    <ul class="widget-list">
+                                        <li class="widget-item"><a href="">Social Marketing</a></li>
+                                        <li class="widget-item"><a href="">Paid Search Engine</a></li>
+                                        <li class="widget-item"><a href="">Privacy Policy</a></li>
+                                        <li class="widget-item"><a href="">Help</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="widget-link">
+                                <div class="widget-contact">
+                                    <h4 class="widget-title">
+                                        Contact Us
+                                    </h4>
+                                    <ul class="widget-list">
+                                        <li class="widget-item">
+                                            <span class="widget-text">
+                                                6391 Elgin St. Celina,Delaware New York. USA
+                                            </span>
+                                        </li>
+                                        <li class="widget-item">
+                                            <i class="fa-solid fa-phone-volume"></i>
+                                            <a href="">
+                                                (303) 555-0105
+                                            </a>
+                                        </li>
+                                        <li class="widget-item">
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <a href="">michael.mitc@example.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="widget-link">
+                                <div class="widget-newsletter">
+                                    <h4 class="widget-title">
+                                        Newsletter
+                                    </h4>
+                                    <form action="" class="widgett-form">
+                                        <input type="text" placeholder="Email Address">
+                                        <div class="widget-btn">
+                                            <button type="submit">Subscribe</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-2">
-                        <div class="footer-widget">
-                            <div class="footer-widget-link">
-                                <h4 class="footer-widget_title">Links</h4>
-                                <ul class="footer-widget_link">
-                                    <li class="footer-widget_link_item"><a href="">Social Marketing</a></li>
-                                    <li class="footer-widget_link_item"><a href="">Paid Search Engine</a></li>
-                                    <li class="footer-widget_link_item"><a href="">Privacy Policy</a></li>
-                                    <li class="footer-widget_link_item"><a href="">Help</a></li>
-                                </ul>
+                    <div class="footer-bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="widget-copyright">
+                                    
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-4">
-                        <div class="footer-widget">
-                            <div class="footer-widget-link">
-                                <h4 class="footer-widget_title">Contact</h4>
-                                <ul class="list-unstyled footer-widget_link ">
-                                    <li class="footer-widget_link_item">
-                                        <span class="footer-widget_text">
-                                            6391 Elgin St. Celina,Delaware New York. USA
-                                        </span>
-                                    </li>
-                                    <li class="footer-widget_link_item">
-                                        <i class="fa-solid fa-phone-volume"></i>
-                                        <a href="#">(303) 555-0105</a>
-                                    </li>
-                                    <li class="footer-widget_link_item">
-                                        <i class="fa-solid fa-envelope"></i>
-                                        <a href="#">michael.mitc@example.com</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 clo-xl-4">
-                        <div class="footer-widget footer-widget_right">
-                            <h4 class="footer-widget_title">
-                                Newsletter
-                            </h4>
-                            <form action="" class="footer-widget_newletter mc-form">
-                                <input type="email" name="EMAIL" id="Email address">
-                                <button type="submit" class="nionx-btn nionx-btn-base">Subscribe</button>
-                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer> -->
+        </div>
+    </footer>
 </body>
 
 </html>

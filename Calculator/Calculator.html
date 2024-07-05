@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="col-md-6 col-xl-4">
+
+            <form action="" method="post">
+                <div class="Mulch-Calculator">
+                    <div>
+                    </div>
+                    <h3>
+                        Mulch Calculator
+                    </h3>
+                    <label for=""> Mulch Area: </label>
+                    <select name="" id="">
+                        <option value="1">Square</option>
+                        <option value="2">Rectangle</option>
+                        <option value="3">Rectangle Border</option>
+                        <option value="4">Circle</option>
+                        <option value="5">Circle Border</option>
+                        <option value="6">Annulus</option>
+                        <option value="7">Triangle</option>
+                        <option value="8">Trapezoid</option>
+                    </select>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="cell">
+                            <label for="length">
+                                Side Length =
+                            </label>
+                            <input type="text" name="length" class="" id="length" inputmode="decimal">
+                            <select name="" id="">
+                                <option value="inch">in</option>
+                                <option value="foot">ft</option>
+                                <option value="yard">cm</option>
+                                <option value="meter">m</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <label for="Depth">
+                                Depth =
+                            </label>
+                            <input type="text">
+                            <select name="depth" id="depth">
+                                <option value="inch">in</option>
+                                <option value="foot">ft</option>
+                                <option value="yard">cm</option>
+                                <option value="meter">m</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <fieldset>
+                    <legend>Optional</legend>
+                    <div class="">
+                        Pricing in &nbsp;
+                        <input type="radio" name="pricing" id="pricing">
+                        <label for="">Bulk</label>
+                        <input type="radio">
+                        <label for="">Bags</label>
+                    </div> 
+                    <div class="calculatorInputGroup">
+                        <div class="calculatorInputGroupInline">
+                            <label for="">price</label>
+                            <br>$
+                            <input type="text" name="price" id="price">
+                        </div>
+                        <div class="calculatorInputGroupInline">
+                            <label for="">per</label>
+                            <select name="per" id="per">
+                                <option value="1">cubic foot</option>
+                                <option value="2">cubic yard</option>
+                                <option value="3">cubic meter</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="calculatorButton floatRight">
+                    <input type="button" value="Calculate" name="calculate" id="calculate">
+                    <input type="button" value="Clear" name="reset" id="reset">
+                </div>
+                <div class="calculatorAnswer">
+                    Answer:
+                    <br>
+                    <div id="answer">
+                        <br>
+                        <strong>Cubic yards = </strong>
+                        <br>
+                        <strong>Cubic feet = </strong>
+                        <br>
+                        <strong>Cubic meters =</strong>
+                        <br>
+                        <strong>Cost = </strong>
+                    </div>
+                    <div>
+                        <br>
+                        <a
+                            href="https://www.calculatorsoup.com/calculators/calculator-widgets.php?folder=construction%2F&folderName=Construction&folder2=&folderName2=&calc=1&pop=1&url=https://www.calculatorsoup.com/calculators/construction/mulch-calculator.php&h1=Mulch+Calculator&pop_w=400&pop_h=600">Get
+                            a Widget for this Calculator</a>
+
+                    </div>
+                    <div class="alignRight">
+                        <a href="https://www.calculatorsoup.com/">https://www.calculatorsoup.com/</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="scrip.js"></script>
+</body>
+
+</html>

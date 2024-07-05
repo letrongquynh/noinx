@@ -1,0 +1,11 @@
+.main{
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+h3{
+    background-color: red;
+
+}
