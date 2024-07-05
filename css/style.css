@@ -5,7 +5,7 @@
   * Author URI: http://www.themesflat.com
 */
 
-
+@import url('/css/');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
@@ -528,7 +528,11 @@ body {
 .header {
     padding-left: 20px;
 }
-
+.container,
+.container--fliud{
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .header-top {
     margin-top: 5px;
     height: 40px;
@@ -609,10 +613,13 @@ body {
     text-shadow: 0 0 1px currentColor;
 }
 
-.header-inner .nav-wrap .menu .btn-contactUs {
-    top: 30px;
-    left: 1328px;
-    gap: 10px;
+.main--header__right{
+    display: flex;
+    align-items: center;
+}
+.btn-contactUs {
+    display: block;
+    margin-right: 30px;
 }
 
 .header .btn-contactUs #contactUS {
@@ -727,171 +734,11 @@ body {
 }
 
 /* blog-card */
-.row{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 2fr);
-    background-color: #f9f7f6;
-    padding: 1.5rem;
-    grid-gap: 3rem;
+.blog--one{
+    padding: 120px 0;
 }
-.blog-card1{
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-.blog-card2{
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
-.blog-card3{
-    grid-column: 4/5;
-    grid-row: 1/2;
-}
-.blog-card4{
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-.blog-card5{
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-.blog-card6{
-    grid-column: 4/5;
-    
-}
-.blog-card{
-    display: block;
-    width: 370px;
-    height: 519px;
-}
-.blog-card .blog-card_img img{
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-}
-.blog-card .blog-card_content{
-    border-radius: 40px;
-    border: 1px solid #D9D9D9;
-    background: #fff;
-    margin-top: -50px;
-    background-color: #fff;
-    z-index: 1;
+.blog--card{
     position: relative;
-    
+    background-color: #Fff;
 }
-.blog-card_meta{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin: 0;
-    margin-bottom: 4px;
-    margin-left: 30px;  
-}
-.blog-card_meta .blog-card_date{
-    margin-top: -57px;
-    display: flex;
-    width: 75px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #5F2DDE;
-    color: #fff;
-    z-index: 10;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 10px;
 
-}
-.blog-card_date_day{
-    font-size: 20px;
-    display: block;
-    margin-bottom: 5px;
-}
-.blog-card_meta_comment{
-    margin-top: -2px;
-    color: #6C6A72;
-    font-family: "Instrument Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 214%;
-}
-.fa-comment{
-    color: #5F2DDE;
-}
-.blog-card_title{
-    padding-bottom: 0px;
-    margin-bottom: 12px;
-    font-style: normal;
-    max-width: 297px;
-    font-weight: 700;
-    margin-left: 30px;
-}
-.blog-card_title a{
-    color: #1D1729;
-}
-.blog-card_content_btn_link{
-    display: block;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    position: relative;
-    margin-left: 30px;
-}
-.blog-card_content .blog-card_horizontalLine{
-    display: block;
-    width: 302px;
-    height: 1px;
-    background-color: #1D1729;
-        z-index: 999;
-        margin-left: 30px;
-    }
-    
-    /* footer */
-    .main-footer_top{
-        background-color: #211B2C;
-    }
-    .main-footer_inner {
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .main-footer_logo {
-        display: block;
-        padding-top: 20px;
-        margin-left: -90px;
-    }
-    
-    .main-footer_inner_logo img {
-        height: 50px;
-    }
-    .main-footer_inner-social {
-        display: flex;
-        width: 35px;
-        height: 35px;
-        font-size: 20px;
-        
-    }
-    .main-footer_inner-social a {
-        padding: 20px;
-        
-    }
-    .main-footer_inner-social a > i{
-        display: block;
-        text-align: center;
-        width: 37.5px;
-        height: 37.5px;
-        padding-top: 8px;
-        color: #211B2C;
-        border: 1px solid #fff; 
-        border-radius: 10px;
-        background-color: #fff;
-        transition: all 0.3s ease-in-out;
-    }
-    .main-footer_inner-social a > i:hover{
-        background-color: #1D1729;
-        color: #fff;
-    }
-    /* .row{
-        background-color: #1D1729;
-    } */
