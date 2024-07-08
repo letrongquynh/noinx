@@ -1,7 +1,7 @@
 /**
   * Name: Nionx file
   * Version: 1.0
-  * Author: Themesflat
+  * Author: Lê Trọng Quỳnh
   * Author URI: http://www.themesflat.com
 */
 
@@ -512,9 +512,6 @@ body {
 /* header----------------------- */
 
 /* header-top------------------- */
-.header {
-    padding-left: 20px;
-}
 
 .container,
 .container--fliud {
@@ -526,38 +523,46 @@ body {
     margin-top: 5px;
     height: 40px;
     width: 100%;
-    background-color: #F4F2F9;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
+.header-top_left{
+    height: 100%;
+    background-color: #F0F0F0;
+    border: 1px solid #F0F0F0;
+    border-top-right-radius: 20px;
+}
+.noinx-information{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+   
+}
+.address{
+    margin-left: 50px;
+    padding-right: 34px ;
+}
 .header-top span {
     color: #6D6B73;
     font-family: "Instrument Sans", sans-serif;
 }
-
+.email{
+    padding-right: 877px;
+}
+.time{
+    margin-right: 50px;
+}
+.icon{
+    margin-right: 50px;
+}
+.icon > i{
+    padding-left: 15px;
+    height: 14px;
+}
 .header-top i {
     color: #5F2DDE;
-}
 
-.header-top .address {
-    grid-column: 1/2;
-}
-
-.header-top .email {
-    grid-column: 2/3;
-}
-
-.header-top .time {
-    display: block;
-    text-align: end;
-    grid-column: 4/5;
-}
-
-.header-top .icon {
-    display: block;
-    text-align: center;
-    grid-column: 5/6;
 }
 
 .header-top .icon i {
@@ -566,6 +571,9 @@ body {
 }
 
 /* header-inner--------------------- */
+.header {
+    margin-left: 50px;
+}
 
 .header-inner {
     margin-top: 10px;
@@ -644,14 +652,23 @@ body {
 
 }
 
-.header-inner .call-anytime img {
+.header-inner .call-anytime_icon > i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 39px;
     height: 39px;
     border-radius: 42px;
     margin-left: 20px;
     margin-right: 10px;
+    background-color: #fff;
+    color: #5F2DDE;
+    transition: all 0.4s ease-in-out;
 }
-
+.header-inner .call-anytime_icon > i:hover{
+    background-color: #110E16;
+    color: #fff;
+}
 .header-inner .call-anytime .text {
     display: flex;
     flex-direction: column;
@@ -682,50 +699,66 @@ body {
     margin: 20px;
 }
 
-/* banner */
-.banner-inner .banner-img img {
-    height: 100%;
-    filter: brightness(50%);
-    padding-bottom: 120px;
-
+/* page-title */
+.page-header_bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/bg.jpg); 
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-.banner-text h1 {   
-    position: absolute;
-    display: block;
-    color: #fff;
-    top: 283px;
-    left: 930px;
+.page-header_bg_text{
+    color: #Fff;
+    font-weight: 700;
     line-height: 47px;
-
+    font-size: 50px;
+    font-family: "Instrument Sans", sans-serif;
 }
-
-.banner .banner-inner .banner-btn {
-    text-align: center;
+.page-header_bg_text h1{
+    font-weight: bold;
 }
-
-.banner .banner-inner .banner-btn a {
-    display: inline-block;
-    position: absolute;
-    width: 153px;
-    height: 48px;
-    font-size: 16px;
-    top: 348px;
-    left: 891px;
+.page-header_bg_btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 17px;
+    margin-bottom: 13px;
     border: 1px solid #Fff;
+    padding: 0 30px;
     border-radius: 12px;
-    color: #fff;
+    line-height: 47px;
+}
+.page-header_bg_btn a{
+    color: #Fff;
+    font-size: 16px;
+}
+.page-header_bg_btn span{
+    color: #Fff;
+}
+
+.page-header_bg_btn a:hover {
+    color: #5F2DDE;
+
+}
+
+.page-header_bg::before {
+    content: "";position: absolute;
+    width: 100%;
+    height: 400px;
+    background: rgba(29, 23, 41, 0.55);
+}
+.page-header .container{
+    position: relative;
+    z-index: 10;
     text-align: center;
-    padding: 10px;
-    gap: 10px
 }
-
-.banner .banner-inner .banner-btn a:hover {
-    background-color: #774CE3;
-}
-
-/* blog-card */
-.blog-post{
+/* blog-post */
+.blog-post {
     padding: 120px 0;
 }
 
@@ -911,9 +944,12 @@ body {
 
 /* footer */
 .footer-widgets{
+    height: 609px;
+    background:url("/img/footer.png") ;
     background-color: #1D1729;
 }
 .footer-widget-top{
+    margin-top: 70px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -923,10 +959,6 @@ body {
     width: 150px;
     height: 44px;
     
-}
-.widget-social a{
-   
-
 }
 .widget-social a i{
     margin: 10px;
@@ -982,4 +1014,18 @@ body {
     border-radius: 20px;
     gap: 10px;
     color: #Fff;
+}
+/* bottom  */
+.bottom{
+    max-width: 1920px;
+    background-color: #110E16;
+    height: 80px;
+}
+.copyright{
+    padding-top: 35px;
+    color: #A49EB5;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+
 }

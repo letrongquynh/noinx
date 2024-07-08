@@ -1,11 +1,93 @@
-.main{
-    max-width: 350px;
+
+
+
+
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    height: 100vh;
+    margin: 0;
+}
+
+input[type="text"], select{
+    color: #0000;
+    border: 1px solid #666;
+    background-color: #fff;
+    border-radius: 2px;
+    color: black;
+}
+.cell{
+    display: table-cell;
+}
+.main{
+    font-family: Arial, sans-serif;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 665px;
+    width: 360px;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.calculator{
+    text-align: center;
+}
+.calculatorForm{
+    margin-bottom: 15px;
+    text-align: left;
 }
 h3{
-    background-color: red;
+    background-color: #b22222;
+    color: white;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 8px 8px 0 0;
 
+}
+label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.mulch-area{
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.mulch-area select{
+    padding: 4px 0 4px 2px;
+}   
+.calculatorButton{
+    display: flex;
+    justify-content: space-between;
+}
+.calculatorButton >input{
+    line-height: 40px;
+    font-size: 15px;
+    margin: 10px;
+}
+.calculatorAnswer{
+    height: 300px;
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid black;
+}
+label{
+    margin: 10px;
+}
+.calculatorInputGroupInline{
+    display: flex;
+    align-items: center;
+}
+.calculatorInputGroupInline >input,select{
+    height: 30px;
+}
+.calculatorInputGroup{
+    display: flex;
+    
 }
