@@ -1299,6 +1299,11 @@
     }
 
     /* aside */
+    .sidebar_single{
+        box-shadow: 0 0 60px 0 rgba(2,2,2,0.07);
+        padding: 40px;
+        gap: 10px;     
+    }
     .blog-single_sidebar {
         padding: 110px 0;
     }
@@ -1331,7 +1336,10 @@
         color: #FFF;
         background-color: #fff;
     }
-
+    .widget-latestpost_list{
+        margin-bottom: 30px;
+        background-color: #fff;
+    }
     .widget-latestpost_title {
         line-height: 26px;
         font-size: 24px;
@@ -1339,19 +1347,24 @@
         font-family: "Instrument Sans", sans-serif;
         padding: 0 168px 30px 0;
         border-bottom: 1px solid #5F2DDE;
+        margin-bottom: 20px;
     }
 
     .widget-latestpost_item {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 20px ;
     }
 
     .widget-latestpost_image {
-        width: 110px;
-        height: 73px;
-
+        padding: 0 20px 20px 0;     
     }
-
+    .widget-latestpost_image img{
+        border-radius: 6px;
+        max-width: 120px;
+    }
+    
+    
     /* bottom  */
     .bottom {
         max-width: 1920px;
