@@ -519,8 +519,6 @@
     }
 
     .header-top {
-        margin-top: 5px;
-        height: 40px;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -705,7 +703,24 @@
         font-size: 20px;
         margin: 20px;
     }
-
+    /* navigation */
+    #mainnav{
+        position: relative;
+    }
+    #mainnav li:hover > ul{
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity=100);
+        opacity: 1;
+        visibility: visible; 
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+            -o-transform: translate(0, 0);
+                transform: translate(0, 0);  
+    }
+    #mainnav ul li a{
+        text-transform: uppercase;
+    }
     /* page-title */
     .page-title {
         margin-bottom: 120px;
