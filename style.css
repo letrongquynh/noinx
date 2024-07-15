@@ -600,12 +600,12 @@
     .header-inner .logo {
         margin-left: 35px;
         width: 150px;
-        padding: 28px 0;
+        padding: 28px 0 0 0;
     }
 
     .mainnav {
-        padding: 44px 0 44px 175px;
-    }
+        padding: 44px 0 0 175px;
+    }   
 
     .menu {
         display: flex;
