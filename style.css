@@ -1161,7 +1161,10 @@
         color: #fff;
         transition: all 0.4s ease-in-out;
     }
-
+    .post-widget_title{
+        border-bottom: 1px solid #6C6A72;
+        padding-bottom: 20px;
+    }
     .post-widget_title a{
         font-family: "Instrument Sans", sans-serif;
         font-size: 22px;
@@ -1750,7 +1753,11 @@
         gap: 10px;
         color: #fff;
     }
-
+    .widget-btn button:hover{
+        background-color: #fff;
+        color: #1D1729;
+        transition: all 0.3s ease;
+    }
 
     /* bottom  */
     .bottom {
